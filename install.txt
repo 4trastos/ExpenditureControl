@@ -1,0 +1,32 @@
+Creación de Ejecutables para Mac y Windows
+Para Windows:
+
+# Instalar pyinstaller
+pip install pyinstaller
+
+# Crear ejecutable para Windows
+pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.ico ExpenditureControl.py
+
+
+Para macOS:
+
+# Instalar pyinstaller
+pip install pyinstaller
+
+# Crear ejecutable para macOS
+pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.icns ExpenditureControl.py
+
+Comandos mejorados con opciones adicionales:
+
+Windows (optimizado):
+
+pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.ico --add-data "*.pdf;." --hidden-import sklearn.neighbors._typedefs --hidden-import sklearn.utils._weight_vector --hidden-import pandas._libs.tslibs.timedeltas ExpenditureControl.py
+
+macOS (optimizado):
+
+pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.icns --add-data "*.pdf:." --hidden-import sklearn.neighbors._typedefs --hidden-import sklearn.utils._weight_vector --hidden-import pandas._libs.tslibs.timedeltas ExpenditureControl.py
+
+Script automatizado para crear ejecutables:
+
+Crea un archivo build.py para automatizar el proceso:
+
