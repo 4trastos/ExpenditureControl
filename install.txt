@@ -1,32 +1,14 @@
-Creación de Ejecutables para Mac y Windows
-Para Windows:
+# 1. Crear el venv
+python3 -m venv venv
 
-# Instalar pyinstaller
-pip install pyinstaller
+# 2. Activar
+source venv/bin/activate
 
-# Crear ejecutable para Windows
-pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.ico ExpenditureControl.py
+# 3. Instalar
+pip install pdfplumber==0.10.3 pandas==2.1.4 numpy==1.26.0 scikit-learn==1.3.2 matplotlib==3.8.2 seaborn==0.13.0 Pillow==10.1.0 openpyxl==3.1.2
 
+# 4. Ejecutar tu aplicación
+python src/ExpenditureControl.py
 
-Para macOS:
-
-# Instalar pyinstaller
-pip install pyinstaller
-
-# Crear ejecutable para macOS
-pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.icns ExpenditureControl.py
-
-Comandos mejorados con opciones adicionales:
-
-Windows (optimizado):
-
-pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.ico --add-data "*.pdf;." --hidden-import sklearn.neighbors._typedefs --hidden-import sklearn.utils._weight_vector --hidden-import pandas._libs.tslibs.timedeltas ExpenditureControl.py
-
-macOS (optimizado):
-
-pyinstaller --onefile --windowed --name "ExpenditureControl" --icon=icon.icns --add-data "*.pdf:." --hidden-import sklearn.neighbors._typedefs --hidden-import sklearn.utils._weight_vector --hidden-import pandas._libs.tslibs.timedeltas ExpenditureControl.py
-
-Script automatizado para crear ejecutables:
-
-Crea un archivo build.py para automatizar el proceso:
-
+# 5. Cuando termines, desactivar
+deactivate
