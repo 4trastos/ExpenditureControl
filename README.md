@@ -12,9 +12,7 @@ Aplicación en Python para el control de gastos e ingresos mediante la extracci�
 - [Instalación](#instalación)  
 - [Uso](#uso)  
 - [Construcción del ejecutable](#construcción-del-ejecutable)  
-- [Estructura del proyecto](#estructura-del-proyecto)  
-- [Contribuciones](#contribuciones)  
-- [Licencia](#licencia)  
+- [Estructura del proyecto](#estructura-del-proyecto) 
 
 ---
 
@@ -111,14 +109,14 @@ Agrega `--hidden-import` extra si PyInstaller te avisa de módulos faltantes (`m
 ```
 ExpenditureControl/
 │
-├── ExpenditureControl.py         # Código principal
-├── build.py                      # Script para crear ejecutables
-├── install_dependencies.py       # Instalar dependencias en Windows
-├── install_dependencies_ubuntu.py# Instalar dependencias en Ubuntu
-├── organize_project.py           # Script de organización
-├── IMG/                          # Imágenes del proyecto
-├── TEST/                         # Archivos de prueba
-├── MAC/                          # Configuración específica de macOS
+├── ExpenditureControl.py             # Código principal
+├── build.py                          # Script para crear ejecutables
+├── install_dependencies.py           # Instalar dependencias en Windows
+├── install_dependencies_ubuntu.py    # Instalar dependencias en Ubuntu
+├── organize_project.py               # Script de organización
+├── IMG/                              # Imágenes del proyecto
+├── TEST/                             # Archivos de prueba
+├── MAC/                              # Configuración específica de macOS
 ├── README.md
 └── requirements.txt (opcional)
 ```
