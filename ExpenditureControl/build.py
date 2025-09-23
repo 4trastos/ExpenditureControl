@@ -84,7 +84,13 @@ def build_executable(platform_type=None):
         "--hidden-import=sklearn.tree._utils",
         "--hidden-import=matplotlib.backends.backend_tkagg",
         "--hidden-import=tkinter",
-        "--hidden-import=PIL._tkinter_finder"
+        "--hidden-import=PIL._tkinter_finder",
+        "--hidden-import=pdfminer.six",
+        "--hidden-import=PyPDF2",
+        "--hidden-import=matplotlib.backends.backend_agg",
+        "--hidden-import=matplotlib.pyplot",
+        "--hidden-import=numpy.core._methods",
+        "--hidden-import=numpy.lib.format"
     ]
     
     cmd.extend(hidden_imports)
