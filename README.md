@@ -123,23 +123,6 @@ ExpenditureControl/
 └── requirements.txt (opcional)
 ```
 
----
-
-## Contribuciones
-
-¡Se agradecen contribuciones!
-
-1. Haz un *fork* del repo.
-2. Crea una rama:
-
-```bash
-   git checkout -b feature-nueva
-```
-3. Haz tus cambios y pruébalos.
-4. Envía un *pull request*.
-
----
-
 ## Licencia
 
 Distribuido bajo la licencia MIT.
